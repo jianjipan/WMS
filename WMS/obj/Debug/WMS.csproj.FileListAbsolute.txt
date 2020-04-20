@@ -1,0 +1,35 @@
+D:\C#学习\方法和作用域\WMS\WMS\bin\Debug\WMS.exe.config
+D:\C#学习\方法和作用域\WMS\WMS\obj\Debug\WMS.csprojResolveAssemblyReference.cache
+D:\C#学习\方法和作用域\WMS\WMS\obj\Debug\MainWindow.baml
+D:\C#学习\方法和作用域\WMS\WMS\obj\Debug\TabControl.baml
+D:\C#学习\方法和作用域\WMS\WMS\obj\Debug\TabControl2.baml
+D:\C#学习\方法和作用域\WMS\WMS\obj\Debug\App.baml
+D:\C#学习\方法和作用域\WMS\WMS\obj\Debug\MainWindow.g.cs
+D:\C#学习\方法和作用域\WMS\WMS\obj\Debug\App.g.cs
+D:\C#学习\方法和作用域\WMS\WMS\obj\Debug\WMS_MarkupCompile.cache
+D:\C#学习\方法和作用域\WMS\WMS\obj\Debug\WMS.g.resources
+D:\C#学习\方法和作用域\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+D:\C#学习\方法和作用域\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.Cache
+D:\C#学习\方法和作用域\WMS\WMS\bin\Debug\WMS.exe
+D:\C#学习\方法和作用域\WMS\WMS\bin\Debug\WMS.pdb
+D:\C#学习\方法和作用域\WMS\WMS\obj\Debug\WMS.exe
+D:\C#学习\方法和作用域\WMS\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\bin\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\bin\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\obj\Debug\WMS.csprojResolveAssemblyReference.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\obj\Debug\MainWindow.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\obj\Debug\TabControl.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\obj\Debug\TabControl2.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\obj\Debug\App.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\obj\Debug\App.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\obj\Debug\WMS.g.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.Cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\WMS.pdb

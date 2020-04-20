@@ -1,0 +1,460 @@
+﻿<Window 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:System="clr-namespace:System;assembly=mscorlib" 
+        mc:Ignorable="d"
+        x:Class="WMS.MainWindow"
+        Height="800" Width="1000"  
+        x:Name="Window"
+	    Title="总控调度系统"  WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Closed="Window_Closed">
+    <Window.Resources>
+        <!--Separator控件模块样式-->
+        <Style x:Key="CorrectSeparatorStyle" TargetType="{x:Type Separator}">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#ffffff" Offset="0"/>
+                        <GradientStop Color="#ffffff" Offset="0.2"/>
+                        <GradientStop Color="#ffffff" Offset="0.3"/>
+                        <GradientStop Color="#ffffff" Offset="0.4"/>
+                        <GradientStop Color="#0067c9" Offset="1"/>
+                    </RadialGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Margin" Value="0,2,0,2"/>
+            <Setter Property="Focusable" Value="false"/>
+            <Setter Property="Height" Value="1"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Separator}">
+                        <Border Background="{TemplateBinding Background}">
+                            <Line Stretch="Fill" X2="1" Stroke="{TemplateBinding Background}" StrokeThickness="{TemplateBinding Height}"
+                              StrokeStartLineCap="Square" StrokeEndLineCap="Square"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!--Button控件模块样式-->
+        <Style x:Key="buttonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition x:Name="columnDefinition1" Width="0.982*"/>
+                                <ColumnDefinition x:Name="columnDefinition" Width="0.018*"/>
+                            </Grid.ColumnDefinitions>
+                            <Rectangle x:Name="rectangle"   Stroke="{x:Null}" Fill="#dfa854" />
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="Stroke" TargetName="rectangle" Value="{x:Null}"/>
+                                <Setter Property="Fill" TargetName="rectangle" Value="#dfa854"/>
+                            </Trigger>
+                            <Trigger Property="IsDefaulted" Value="True">
+                                <Setter Property="Fill" TargetName="rectangle" Value="#dfa854"/>
+                                <Setter Property="Stroke" TargetName="rectangle" Value="{x:Null}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Stroke" TargetName="rectangle" Value="{x:Null}"/>
+                                <Setter Property="Fill" TargetName="rectangle" Value="#efbc6e"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Stroke" TargetName="rectangle" Value="{x:Null}"/>
+                                <Setter Property="Fill" TargetName="rectangle" Value="#dfa854"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Stroke" TargetName="rectangle" Value="{x:Null}"/>
+                                <Setter Property="Fill" TargetName="rectangle" Value="{x:Null}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Brush3" Color="#FF30C024"/>
+
+        <!--Combox右侧下拉按钮-->
+        <Style TargetType="{x:Type ToggleButton}" x:Key="ComboxStyleBtn">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <!--下拉按钮内部背景色-->
+                        <Border x:Name="Back" Background="#001f55" BorderThickness="1" BorderBrush="Transparent">
+                            <!--下拉按钮内边框-->
+                            <Path x:Name="PathFill" Fill="#03ffea"  Width="10" Height="6" StrokeThickness="0" Data="M5,0 L10,10 L0,10 z" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                                <Path.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="180"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Path.RenderTransform>
+                            </Path>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="PathFill" Property="Fill" Value="White"/>
+                                <Setter TargetName="Back" Property="Background" Value="#00CA4F"/>
+                                <Setter TargetName="Back" Property="BorderBrush" Value="#59CA4F"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!--Combox-->
+        <Style TargetType="{x:Type ComboBox}" x:Key="ComboBoxStyle">
+            <Setter Property="ItemContainerStyle">
+                <Setter.Value>
+                    <!--ComBoxItem-->
+                    <Style TargetType="{x:Type ComboBoxItem}">
+                        <Setter Property="MinHeight" Value="22"/>
+                        <Setter Property="MinWidth" Value="60"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                                    <Border x:Name="Back" Background="Transparent"  BorderThickness="0,0,0,0" BorderBrush="#81D779" >
+                                        <ContentPresenter ContentSource="{Binding Source}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" />
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="Back" Property="Background" Value="LightGray"/>
+                                        </Trigger>
+                                        <!--下拉框背景色-->
+                                        <Trigger Property="IsHighlighted" Value="True">
+                                            <Setter TargetName="Back" Property="Background" Value="#ff0000"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBox}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.7*"/>
+                                <ColumnDefinition Width="0.3*" MaxWidth="30"/>
+                            </Grid.ColumnDefinitions>
+                            <!--文字区域背景和边线样式-->
+                            <TextBox Background="#001f55" VerticalAlignment="Center"  Grid.Column="0" Foreground="#03ffea" BorderBrush="#03ffea" BorderThickness="0" IsReadOnly="{TemplateBinding IsReadOnly}" Text="{TemplateBinding Text}"/>
+                            <Border  Grid.Column="0" BorderThickness="1" BorderBrush="#03ffea" CornerRadius="1,0,0,1"/>
+                            <!--右侧下拉button设置-->
+                            <Border Grid.Column="1" BorderThickness="0,1,1,1" BorderBrush="#03ffea" CornerRadius="0,1,1,0">
+                                <ToggleButton BorderThickness="3" BorderBrush="#03ffea" Style="{StaticResource ComboxStyleBtn}" IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press"/>
+                            </Border>
+                            <!--弹出popup整体设置-->
+                            <Popup IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" x:Name="Popup" Focusable="False" AllowsTransparency="True" PopupAnimation="Slide" >
+                                <!--弹出popup边框-->
+                                <Border CornerRadius="1" BorderBrush="#03ffea" BorderThickness="1,0,1,1" MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{TemplateBinding ActualWidth}" x:Name="DropDown" SnapsToDevicePixels="True">
+                                    <Border.Effect>
+                                        <DropShadowEffect Color="Black" BlurRadius="2" ShadowDepth="0" Opacity="1"/>
+                                    </Border.Effect>
+                                    <!--下拉幕布边界背景设置 MaxHeight="{TemplateBinding MaxDropDownHeight}"-->
+                                    <ScrollViewer Margin="0,0,0,0"   SnapsToDevicePixels="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" BorderBrush="#17acae" BorderThickness="2" >
+                                        <!-- StackPanel 用于显示子级，方法是将 IsItemsHost 设置为 True -->
+                                        <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" Background="#001f55" />
+                                    </ScrollViewer>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="80"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.ColumnSpan="3">
+            <MenuItem Header="【生产管理】">
+
+            </MenuItem>
+            <MenuItem Header="【数据报表】">
+
+            </MenuItem>
+            <MenuItem Header="【基础信息】">
+            </MenuItem>
+            <MenuItem Header="【系统配置】"/>
+            <MenuItem Header="【通用设置】"/>
+            <MenuItem Header="【帮助】"/>
+        </Menu>
+        <!--logo图片 Heard 头部-->
+        <TextBlock Text="总控调度系统" Grid.Row="1" Grid.ColumnSpan="3" TextAlignment="Center" 
+                   Foreground="#ffffff" Padding="0 8 0 0" FontSize="30" FontWeight="Bold" HorizontalAlignment="Stretch">
+            <TextBlock.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#5aacf6" Offset="0.0"/>
+                    <GradientStop Color="#0056f1" Offset="0.2"/>
+                    <GradientStop Color="#13ceff" Offset="0.4"/>
+                    <GradientStop Color="#006bff" Offset="0.6"/>
+                    <GradientStop Color="#19d5ff" Offset="0.8"/>
+                    <GradientStop Color="#5aacf6" Offset="1.0"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+
+        <!--分割线-->
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="3">
+            <Separator Style="{StaticResource ResourceKey=CorrectSeparatorStyle}" Height="5" Background="#c0c0c0"/>
+        </StackPanel>
+
+        <!--主操作区域-->
+        <Grid Grid.Row="3" Grid.ColumnSpan="3">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#5aacf6" Offset="0.0"/>
+                    <GradientStop Color="#0056f1" Offset="0.2"/>
+                    <GradientStop Color="#13ceff" Offset="0.4"/>
+                    <GradientStop Color="#006bff" Offset="0.6"/>
+                    <GradientStop Color="#19d5ff" Offset="0.8"/>
+                    <GradientStop Color="#5aacf6" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <TabControl HorizontalAlignment="Left" Margin="0,10,0,10.2" Width="984" SelectedIndex="0" TabStripPlacement="Left" IsSynchronizedWithCurrentItem="False" VerticalContentAlignment="Center" BorderThickness="1" Foreground="{x:Null}" Background="{x:Null}" >
+                <TabItem Style="{StaticResource TabItemStyle}" x:Name="TableItem1" Header="信息显示" Height="84" Width="84" Foreground="{x:Null}">
+                    <TabItem.Background>
+                        <ImageBrush ImageSource="picture\png\ios7-home-outline.png"/>
+                    </TabItem.Background>
+                    <Grid Margin="10,0,0,-0.4">
+                        <Rectangle HorizontalAlignment="Left" Height="161" Margin="73,22,0,0" RadiusY="14.734" RadiusX="14.734" Stroke="Black" VerticalAlignment="Top" Width="338"/>
+                        <Grid HorizontalAlignment="Left" Height="151" Margin="85,32,0,0" VerticalAlignment="Top" Width="326">
+                            <Label Content="AGV1" HorizontalContentAlignment="Center"  FontSize="24"  Foreground="Yellow" HorizontalAlignment="Left" Height="40" Margin="92,-9,0,0" VerticalAlignment="Top" Width="92"/>
+                            <Label Content="应答状态：" HorizontalAlignment="Left" Height="24" Margin="9,64,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label Content="执行状态：" HorizontalAlignment="Left" Height="24" Margin="9,93,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label Content="通讯状态：" HorizontalAlignment="Left" Height="24" Margin="9,35,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label x:Name="AGV1_comState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,35,0,0" VerticalAlignment="Top" Width="224"/>
+                            <Label x:Name="AGV1_answerState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,64,0,0" VerticalAlignment="Top" Width="224"/>
+                            <Label x:Name="AGV1_executeState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,93,0,0" VerticalAlignment="Top" Width="224"/>
+                            <Label Content="作业状态：" HorizontalAlignment="Left" Height="24" Margin="9,120,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label x:Name="AGV1_WorkState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,122,0,0" VerticalAlignment="Top" Width="224"/>
+                        </Grid>
+                        <Rectangle HorizontalAlignment="Left" Height="161" Margin="495,22,0,0" RadiusY="14.734" RadiusX="14.734" Stroke="Black" VerticalAlignment="Top" Width="351"/>
+                        <Grid HorizontalAlignment="Left" Height="151" Margin="507,32,0,0" VerticalAlignment="Top" Width="339">
+                            <Label Content="AGV2" HorizontalContentAlignment="Center"  FontSize="24"  Foreground="Yellow" HorizontalAlignment="Left" Height="40" Margin="92,-9,0,0" VerticalAlignment="Top" Width="92"/>
+                            <Label Content="应答状态：" HorizontalAlignment="Left" Height="24" Margin="9,62,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label Content="执行状态：" HorizontalAlignment="Left" Height="24" Margin="9,91,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label Content="通讯状态：" HorizontalAlignment="Left" Height="24" Margin="9,33,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label x:Name="AGV2_comState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,33,0,0" VerticalAlignment="Top" Width="237"/>
+                            <Label x:Name="AGV2_answerState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,62,0,0" VerticalAlignment="Top" Width="237"/>
+                            <Label x:Name="AGV2_executeState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,91,0,0" VerticalAlignment="Top" Width="237"/>
+                            <Label Content="作业状态：" HorizontalAlignment="Left" Height="24" Margin="10,120,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label x:Name="AGV2_WorkState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,121,0,0" VerticalAlignment="Top" Width="237"/>
+                        </Grid>
+                        <Rectangle HorizontalAlignment="Left" Height="161" Margin="73,240,0,0" RadiusY="14.734" RadiusX="14.734" Stroke="Black" VerticalAlignment="Top" Width="338"/>
+                        <Grid HorizontalAlignment="Left" Height="137" Margin="85,250,0,0" VerticalAlignment="Top" Width="326">
+                            <Label Content="复合机器人" HorizontalContentAlignment="Center"  FontSize="24"  Foreground="Yellow" HorizontalAlignment="Left" Height="40" Margin="80,0,0,0" VerticalAlignment="Top" Width="132"/>
+                            <Label Content="应答状态：" HorizontalAlignment="Left" Height="24" Margin="9,76,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label Content="执行状态：" HorizontalAlignment="Left" Height="24" Margin="9,105,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label Content="通讯状态：" HorizontalAlignment="Left" Height="24" Margin="9,47,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label x:Name="Mix_comState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,47,0,0" VerticalAlignment="Top" Width="224"/>
+                            <Label x:Name="Mix_answerState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,76,0,0" VerticalAlignment="Top" Width="224"/>
+                            <Label x:Name="Mix_executeState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,105,0,0" VerticalAlignment="Top" Width="224"/>
+                        </Grid>
+                        <Rectangle HorizontalAlignment="Left" Height="167" Margin="495,240,0,0" RadiusY="14.734" RadiusX="14.734" Stroke="Black" VerticalAlignment="Top" Width="351"/>
+                        <Grid HorizontalAlignment="Left" Height="151" Margin="517,250,0,0" VerticalAlignment="Top" Width="329">
+                            <Label Content="双臂机器人" HorizontalContentAlignment="Center"  FontSize="24"  Foreground="Yellow" HorizontalAlignment="Left" Height="40" Margin="80,-14,0,0" VerticalAlignment="Top" Width="132"/>
+                            <Label Content="是否完成：" HorizontalAlignment="Left" Height="24" Margin="9,77,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label Content="应答号：" HorizontalAlignment="Left" Height="24" Margin="9,103,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label Content="启动信号：" HorizontalAlignment="Left" Height="24" Margin="9,52,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label x:Name="TWO_StartSignal" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,48,0,0" VerticalAlignment="Top" Width="227"/>
+                            <Label x:Name="TWO_IsComplete" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,73,0,0" VerticalAlignment="Top" Width="227"/>
+                            <Label x:Name="TWO_ResponseID" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,99,0,0" VerticalAlignment="Top" Width="227"/>
+                            <Label Content="执行状态：" HorizontalAlignment="Left" Margin="10,125,0,2" Width="75"/>
+                            <Label x:Name="TWO_ExecuteState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,126,0,0" VerticalAlignment="Top" Width="227"/>
+                            <Label Content="通信状态：" HorizontalAlignment="Left" Height="24" Margin="10,23,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label x:Name="Two_comState" Content="" HorizontalAlignment="Left" Height="24" Margin="92,23,0,0" VerticalAlignment="Top" Width="227"/>
+                        </Grid>
+                        <Rectangle HorizontalAlignment="Left" Height="161" Margin="73,452,0,0" RadiusY="14.734" RadiusX="14.734" Stroke="Black" VerticalAlignment="Top" Width="338"/>
+                        <Grid HorizontalAlignment="Left" Height="146" Margin="85,462,0,0" VerticalAlignment="Top" Width="326">
+                            <Label Content="叉车AGV" HorizontalContentAlignment="Center"  FontSize="24"  Foreground="Yellow" HorizontalAlignment="Left" Height="40" Margin="80,0,0,0" VerticalAlignment="Top" Width="132"/>
+                            <Label Content="应答状态：" HorizontalAlignment="Left" Height="24" Margin="9,63,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label Content="执行状态：" HorizontalAlignment="Left" Height="24" Margin="9,92,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label Content="通讯状态：" HorizontalAlignment="Left" Height="24" Margin="9,34,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label x:Name="FAGV_comState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,34,0,0" VerticalAlignment="Top" Width="224"/>
+                            <Label x:Name="FAGV_answerState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,63,0,0" VerticalAlignment="Top" Width="224"/>
+                            <Label x:Name="FAGV_executeState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,92,0,0" VerticalAlignment="Top" Width="224"/>
+                            <Label Content="终点：" HorizontalAlignment="Left" Height="24" Margin="9,121,0,0" VerticalAlignment="Top" Width="43"/>
+                            <Label x:Name="FAGV_FinalPoint" Content="Label" HorizontalAlignment="Left" Height="24" Margin="52,121,0,0" VerticalAlignment="Top" Width="62"/>
+                            <Label Content="故障代码：" HorizontalAlignment="Left" Height="24" Margin="120,121,0,0" VerticalAlignment="Top" Width="63"/>
+                            <Label x:Name="FAGV_ErrorCode" Content="Label" HorizontalAlignment="Left" Height="24" Margin="188,122,0,0" VerticalAlignment="Top" Width="60"/>
+                        </Grid>
+                        <Rectangle HorizontalAlignment="Left" Height="161" Margin="495,452,0,0" RadiusY="14.734" RadiusX="14.734" Stroke="Black" VerticalAlignment="Top" Width="351"/>
+                        <Grid HorizontalAlignment="Left" Height="137" Margin="507,462,0,0" VerticalAlignment="Top" Width="339">
+                            <Label Content="立库系统" HorizontalContentAlignment="Center"  FontSize="24"  Foreground="Yellow" HorizontalAlignment="Left" Height="40" Margin="91,0,0,0" VerticalAlignment="Top" Width="132"/>
+                            <Label Content="应答状态：" HorizontalAlignment="Left" Height="24" Margin="9,76,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label Content="执行状态：" HorizontalAlignment="Left" Height="24" Margin="9,105,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label Content="通讯状态：" HorizontalAlignment="Left" Height="24" Margin="9,47,0,0" VerticalAlignment="Top" Width="75"/>
+                            <Label x:Name="TWH_comState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,47,0,0" VerticalAlignment="Top" Width="247"/>
+                            <Label x:Name="TWH_answerState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,76,0,0" VerticalAlignment="Top" Width="237"/>
+                            <Label x:Name="TWH_executeState" Content="Label" HorizontalAlignment="Left" Height="24" Margin="92,105,0,0" VerticalAlignment="Top" Width="237"/>
+                        </Grid>
+                    </Grid>
+                </TabItem>
+                <TabItem Style="{StaticResource TabItemStyle}" x:Name="TableItem2" Header="手动操作" Height="84" Width="84" RenderTransformOrigin="0.254,0.426" Margin="-2,-2,-1,-2">
+                    <TabItem.Background>
+                        <ImageBrush ImageSource="picture\png\ios7-cog-outline.png"/>
+                    </TabItem.Background>
+                    <TabItem.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TabItem.RenderTransform>
+                    <Grid Margin="0,8,6,1.6">
+                        <GroupBox Header="AGV1&amp;AGV2" Margin="10,0,471.293,317.755" Foreground="Yellow">
+                            <Grid HorizontalAlignment="Left" Height="269" Margin="4,10,0,0" VerticalAlignment="Top" Width="374">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="184*"/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Button x:Name="AGV1_button2" Content="前往零件接转区" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" Margin="29,167,0,0" VerticalAlignment="Top" Width="137"  ToolTip="AGV1前往零件接转区" Click="AGV1_button2_Click"/>
+                                <Button x:Name="AGV1_button3" Content="前往初始位置" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" Margin="29,216,0,0" VerticalAlignment="Top" Width="137"  ToolTip="AGV1前往初始位置" Click="AGV1_button3_Click"/>
+                                <Button x:Name="AGV2_button2" Content="前往零件接转区" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" Margin="201,167,0,0" VerticalAlignment="Top" Width="137"  ToolTip="AGV2前往零件接转区" Click="AGV2_button2_Click"/>
+                                <Button x:Name="AGV2_button3" Content="前往初始位置" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" Margin="201,216,0,0" VerticalAlignment="Top" Width="137"  ToolTip="AGV2前往初始位置" Click="AGV2_button3_Click"/>
+                                <Button x:Name="AGV1_button4" Content="前往立库料台放料盘"  Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="35" Margin="29,116,0,0" VerticalAlignment="Top" Width="137" Click="AGV1_button4_Click"/>
+                                <Button x:Name="AGV2_button4"  Content="前往立库料台放料盘"  Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="35" Margin="201,116,0,0" VerticalAlignment="Top" Width="137" Click="AGV2_button4_Click"/>
+                                <Button x:Name="AGV2_button5" Content="前往立库料台取料盘" Background="Transparent"  Foreground="White" HorizontalAlignment="Left" Height="34" Margin="201,67,0,0" VerticalAlignment="Top" Width="137" Click="AGV2_button1_Click"/>
+                                <Button x:Name="AGV1_button5"  Content="前往立库料台取料盘" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="34" Margin="29,69,0,0" VerticalAlignment="Top" Width="137" Click="AGV1_button1_Click"/>
+                                <Button x:Name="AGV1_button1"  Content="前往立库料台" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="34" Margin="29,20,0,0" VerticalAlignment="Top" Width="137" Click="AGV1_button5_Click"/>
+                                <Button x:Name="AGV2_button1" Content="前往立库料台" Background="Transparent"  Foreground="White" HorizontalAlignment="Left" Height="34" Margin="201,20,0,0" VerticalAlignment="Top" Width="137" Click="AGV2_button5_Click"/>
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Header="双臂机器人" Margin="10,323,471.293,79.755" Foreground="Yellow">
+                            <Grid HorizontalAlignment="Left" Height="190" VerticalAlignment="Top" Width="379">
+                                <Button x:Name="TWO_button1" Content="从零件托盘取出零件" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="137"  ToolTip="AGV1前往初始位置" Margin="24,31,0,0" Click="TWO_button1_Click"/>
+                                <Button x:Name="TWO_button3" Content="装配" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="137"  ToolTip="AGV1前往初始位置" Margin="24,85,0,0" Click="TWO_button2_Click"/>
+                                <Button x:Name="TWO_button2" Content="从成品托盘取出成品" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="137"  ToolTip="AGV1前往初始位置" Margin="197,31,0,0" Click="TWO_button4_Click"/>
+                                <Button x:Name="TWO_button4" Content="拆解" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="137"  ToolTip="AGV1前往初始位置" Margin="197,85,0,0" Click="TWO_button5_Click"/>
+                                <Button x:Name="TWO_button5" Content="将成品放到成品托盘" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="137"  ToolTip="AGV1前往初始位置" Margin="24,136,0,0" Click="TWO_button3_Click"/>
+                                <Button x:Name="TWO_button6" Content="将零件放到零件托盘" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="137"  ToolTip="AGV1前往初始位置" Margin="197,136,0,0" Click="TWO_button6_Click"/>
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Header="叉车AGV" Margin="429,307,10.293,164.755" Foreground="Yellow">
+                            <Grid HorizontalAlignment="Left" Height="124" Margin="10,0,0,0" VerticalAlignment="Top" Width="407">
+                                <Button x:Name="FAGV_button1" Content="前往立库料台取料" FontSize="10" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="97"  ToolTip="AGV1前往初始位置" Margin="20,20,0,0" Click="FAGV_button1_Click"/>
+                                <Button x:Name="FAGV_button4" Content="前往中转区送料" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="97"  ToolTip="AGV1前往初始位置" Margin="20,77,0,0" Click="FAGV_button4_Click"/>
+                                <Button x:Name="FAGV_button2" Content="前往立库料台送料" FontSize="10" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="91"  ToolTip="AGV1前往初始位置" Margin="150,20,0,0" Click="FAGV_button2_Click"/>
+                                <Button x:Name="FAGV_button6" Content="前往安全区" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="93"  ToolTip="AGV1前往初始位置" Margin="271,77,0,0" Click="FAGV_button6_Click"/>
+                                <Button x:Name="FAGV_button5" Content="前往初始位置" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" Margin="151,77,0,0" VerticalAlignment="Top" Width="91" Click="FAGV_button5_Click"/>
+                                <Button x:Name="FAGV_button3" Content="前往中转区取料" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="93"  ToolTip="AGV1前往初始位置" Margin="274,20,0,0" Click="FAGV_button3_Click"/>
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Header="复合机器人" Foreground="Yellow" HorizontalAlignment="Left" Height="291" Margin="429,0,0,0" VerticalAlignment="Top" Width="439">
+                            <Grid HorizontalAlignment="Left" Height="259" Margin="10,7,-2.6,0" VerticalAlignment="Top" Width="419">
+                                <Button x:Name="Mix_button1" Content="前往零件接转区" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="40" Margin="30,26,0,0" VerticalAlignment="Top" Width="155" Click="Mix_button1_Click"/>
+                                <Button x:Name="Mix_button2" Content="前往双臂装配区" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="40" Margin="216,26,0,0" VerticalAlignment="Top" Width="155" Click="Mix_button2_Click"/>
+                                <Button x:Name="Mix_button3" Content="前往成品接转区" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="40" Margin="30,87,0,0" VerticalAlignment="Top" Width="155" Click="Mix_button3_Click"/>
+                                <Button x:Name="Mix_button4" Content="回到初始位置" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="40" Margin="216,87,0,0" VerticalAlignment="Top" Width="155" Click="Mix_button4_Click"/>
+                                <Button x:Name="Mix_button5" Content="接转区取/放零件料盘" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="40" Margin="30,148,0,0" VerticalAlignment="Top" Width="155" Click="Mix_button5_Click"/>
+                                <Button x:Name="Mix_button6" Content="装配区取/放零件料盘" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="40" Margin="216,148,0,0" VerticalAlignment="Top" Width="155" Click="Mix_button6_Click"/>
+                                <Button x:Name="Mix_button7" Content="成品区取/放零件料盘" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="40" Margin="134,208,0,0" VerticalAlignment="Top" Width="155" Click="Mix_button7_Click"/>
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Header="立库软件" Foreground="Yellow" HorizontalAlignment="Left" Height="152" Margin="429,470,0,-0.245" VerticalAlignment="Top" Width="439">
+                            <Grid HorizontalAlignment="Left" Height="123" VerticalAlignment="Top" Width="423">
+                                <Button x:Name="TWH_button1" Content="零件出库操作"  Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="30" Margin="42,21,0,0" VerticalAlignment="Top" Width="127" Click="TWH_button2_Click"/>
+                                <Button x:Name="TWH_button2" Content="零件入库操作"  Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="30" Margin="42,73,0,0" VerticalAlignment="Top" Width="127" Click="TWH_button1_Click"/>
+                                <Button x:Name="TWH_button4" Content="成品出库操作"  Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="30" Margin="228,21,0,0" VerticalAlignment="Top" Width="127" Click="TWH_button5_Click"/>
+                                <Button x:Name="TWH_button5" Content="成品入库操作"  Foreground="White" Background="Transparent" HorizontalAlignment="Left" Height="30" Margin="228,73,0,0" VerticalAlignment="Top" Width="127" Click="TWH_button4_Click"/>
+                            </Grid>
+                        </GroupBox>
+                        <Button x:Name="Connect_FAGV" Content="连接叉车AGV" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="26" Margin="103,552,0,0" VerticalAlignment="Top" Width="131" Click="Connect_FAGV_Click"/>
+                        <Button x:Name="FAGV_Charing" Content="叉车AGV充电" Background="Transparent" Foreground="White" Margin="19,583,733.293,12.755" Click="FAGV_Charing_Click"/>
+                        <Button x:Name="FAGV_unCharing" Content="叉车AGV充电完成" Background="Transparent" Foreground="White" Margin="211,583,536.293,12.755" Click="FAGV_unCharing_Click"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Style="{StaticResource TabItemStyle}" x:Name="TableItem3" Header="自动操作" Height="84" Width="84" Foreground="{x:Null}" Margin="-0.5,0,0.5,0" VerticalAlignment="Bottom" d:LayoutOverrides="Height">
+                    <TabItem.Background>
+                        <ImageBrush ImageSource="picture\png\ios7-glasses-outline.png"/>
+                    </TabItem.Background>
+                    <Grid HorizontalAlignment="Left" Height="632" VerticalAlignment="Top" Width="875">
+                        <GroupBox Header="GroupBox" Margin="42,77,451,23">
+                            <Grid HorizontalAlignment="Left" Height="500" Margin="10,0,0,0" VerticalAlignment="Top" Width="321">
+                                <Button x:Name="Auto_CJ_Start" Content="自动拆解启动" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="49" Margin="60,362,0,0" VerticalAlignment="Top" Width="243" Click="Auto_CJ_Start_Click"/>
+                                <Button x:Name="Auto_CJ_closed" Content="自动拆解关闭" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="49" Margin="60,433,0,0" VerticalAlignment="Top" Width="243" Click="Auto_CJ_closed_Click"/>
+                                <Button x:Name="Auto_ZP_Start" Content="自动装配启动" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="43" Margin="60,118,0,0" VerticalAlignment="Top" Width="243" Click="Auto_ZP_Start_Click"/>
+                                <Button x:Name="Auto_ZP_closed" Content="自动装配关闭" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="44" Margin="60,188,0,0" VerticalAlignment="Top" Width="243" IsCancel="True" Click="Auto_ZP_closed_Click"/>
+                                <Button x:Name="Auto_CJ_Mode" Content="自动拆解模式" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="49" Margin="60,287,0,0" VerticalAlignment="Top" Width="243" Click="Auto_CJ_Mode_Click"/>
+                                <Button x:Name="Auto_ZP_Mode" Content="自动装配模式" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="43" Margin="60,56,0,0" VerticalAlignment="Top" Width="243" Click="Auto_ZP_Mode_Click"/>
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="532" Margin="475,77,0,0" VerticalAlignment="Top" Width="390">
+                            <Grid HorizontalAlignment="Left" Height="496" Margin="8,12,0,0" VerticalAlignment="Top" Width="352">
+                                <Label Content="装配模式" FontSize="24" Foreground="Yellow" HorizontalAlignment="Left" Height="43" Margin="127,12,0,0" VerticalAlignment="Top" Width="113"/>
+                                <Label Content="请选择装配要出入库的仓位:" Foreground="Yellow" FontSize="14" HorizontalAlignment="Left" Height="33" Margin="30,71,0,0" VerticalAlignment="Top" Width="183"/>
+                                <Label Content="零件1" Foreground="Yellow" HorizontalAlignment="Left" Height="24" Margin="23,123,0,0" VerticalAlignment="Top" Width="52"/>
+                                <Label Content="零件2" Foreground="Yellow" HorizontalAlignment="Left" Height="24" Margin="88,123,0,0" VerticalAlignment="Top" Width="52"/>
+                                <Label Content="零件3" Foreground="Yellow" HorizontalAlignment="Left" Height="24" Margin="153,123,0,0" VerticalAlignment="Top" Width="52"/>
+                                <Label Content="零件4" Foreground="Yellow" HorizontalAlignment="Left" Height="24" Margin="221,123,0,0" VerticalAlignment="Top" Width="52"/>
+                                <Label Content="成品" Foreground="Yellow" HorizontalAlignment="Left" Height="24" Margin="288,123,0,0" VerticalAlignment="Top" Width="40"/>
+                                <TextBox x:Name="tb_zpPart1" HorizontalAlignment="Left" Height="18" Margin="20,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47"/>
+                                <TextBox x:Name="tb_zpPart2" HorizontalAlignment="Left" Height="18" Margin="88,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47"/>
+                                <TextBox x:Name="tb_zpPart3" HorizontalAlignment="Left" Height="18" Margin="153,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47"/>
+                                <TextBox x:Name="tb_zpPart4" HorizontalAlignment="Left" Height="18" Margin="221,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47"/>
+                                <TextBox x:Name="tb_zpAssembly" HorizontalAlignment="Left" Height="18" Margin="284,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47"/>
+                                <Button x:Name="btn_InsertZPkuwei" Content="插入待出入库指令表" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="30" Margin="123,194,0,0" VerticalAlignment="Top" Width="113" Click="btn_InsertZPkuwei_Click"/>
+                                <Label Content="拆解模式" FontSize="24" Foreground="Yellow" HorizontalAlignment="Left" Height="43" Margin="128,247,0,0" VerticalAlignment="Top" Width="113"/>
+                                <Label Content="请选择拆解要出入库的仓位:" Foreground="Yellow" FontSize="14" HorizontalAlignment="Left" Height="33" Margin="30,306,0,0" VerticalAlignment="Top" Width="183"/>
+                                <Label Content="零件1" Foreground="Yellow" HorizontalAlignment="Left" Height="24" Margin="23,358,0,0" VerticalAlignment="Top" Width="52"/>
+                                <Label Content="零件2" Foreground="Yellow" HorizontalAlignment="Left" Height="24" Margin="88,358,0,0" VerticalAlignment="Top" Width="52"/>
+                                <Label Content="零件3" Foreground="Yellow" HorizontalAlignment="Left" Height="24" Margin="153,358,0,0" VerticalAlignment="Top" Width="52"/>
+                                <Label Content="零件4" Foreground="Yellow" HorizontalAlignment="Left" Height="24" Margin="221,358,0,0" VerticalAlignment="Top" Width="52"/>
+                                <Label Content="成品" Foreground="Yellow" HorizontalAlignment="Left" Height="24" Margin="288,358,0,0" VerticalAlignment="Top" Width="40"/>
+                                <TextBox x:Name="tb_cjPart1" HorizontalAlignment="Left" Height="18" Margin="20,387,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47"/>
+                                <TextBox x:Name="tb_cjPart2" HorizontalAlignment="Left" Height="18" Margin="88,387,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47"/>
+                                <TextBox x:Name="tb_cjPart3" HorizontalAlignment="Left" Height="18" Margin="153,387,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47"/>
+                                <TextBox x:Name="tb_cjPart4" HorizontalAlignment="Left" Height="18" Margin="221,387,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47"/>
+                                <TextBox x:Name="tb_cjAssembly" HorizontalAlignment="Left" Height="18" Margin="284,387,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47"/>
+                                <Button x:Name="btn_InsertCJkuwei" Content="插入待出入库指令表" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="30" Margin="123,428,0,0" VerticalAlignment="Top" Width="113" Click="btn_InsertCJkuwei_Click"/>
+                            </Grid>
+                        </GroupBox>
+                        <Button x:Name="btn_DeleteCmd" Content="重置指令表" Background="Transparent" Foreground="White" HorizontalAlignment="Left" Height="44" Margin="48,20,0,0" VerticalAlignment="Top" Width="224" Click="btn_DeleteCmd_Click"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Style="{StaticResource TabItemStyle}" x:Name="TableItem4" Height="84" Width="84" Header="其他">
+                    <TabItem.Background>
+                        <ImageBrush ImageSource="picture\png\ios7-upload-outline.png"/>
+                    </TabItem.Background>
+                    <Grid Margin="7,10,19,10.6"/>
+                </TabItem>
+                <TabItem Style="{StaticResource TabItemStyle}" x:Name="TableItem5" Width="84" Background="{x:Null}" Margin="0,0,0.8,0">
+                    <Grid Margin="8,8,5.707,7.845"/>
+                </TabItem>
+
+            </TabControl>
+
+
+        </Grid>
+        <StatusBar Grid.Row="4" Grid.ColumnSpan="3" VerticalAlignment="Center" Background="Beige">
+            <StatusBarItem Content="数据帐套:正式帐套"/>
+            <StatusBarItem Content="岗位名称:仓库管理员" Margin="25 0 0 0"/>
+            <StatusBarItem Content="登录用户名:系统管理员" Margin="25 0 0 0"/>
+            <StatusBarItem Content="登录时间:2013年11月20日 13:54:08 星期一" Margin="25 0 0 0"/>
+        </StatusBar>
+    </Grid>
+</Window>

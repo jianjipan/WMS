@@ -1,0 +1,235 @@
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\WMSServer.csprojResolveAssemblyReference.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\MainWindow.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\TabControl.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\TabControl2.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\App.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\App.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\WMS.g.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\bin\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本\WMS\bin\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\bin\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\bin\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\obj\Debug\WMSServer.csprojResolveAssemblyReference.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\obj\Debug\MainWindow.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\obj\Debug\TabControl.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\obj\Debug\TabControl2.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\obj\Debug\App.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\obj\Debug\App.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\obj\Debug\WMS.g.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS - 副本 - 副本\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\bin\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\bin\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\obj\Debug\WMSServer.csprojResolveAssemblyReference.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\obj\Debug\MainWindow.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\obj\Debug\TabControl.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\obj\Debug\TabControl2.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\obj\Debug\App.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\obj\Debug\App.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\obj\Debug\WMS.g.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\bin\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\bin\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\obj\Debug\WMSServer.csprojResolveAssemblyReference.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\obj\Debug\MainWindow.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\obj\Debug\TabControl.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\obj\Debug\TabControl2.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\obj\Debug\App.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\obj\Debug\App.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\obj\Debug\WMS.g.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.12\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\bin\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\bin\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\obj\Debug\WMSServer.csprojResolveAssemblyReference.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\obj\Debug\MainWindow.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\obj\Debug\TabControl.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\obj\Debug\TabControl2.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\obj\Debug\App.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\obj\Debug\App.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\obj\Debug\WMS.g.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.14\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\bin\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\bin\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\obj\Debug\WMSServer.csprojResolveAssemblyReference.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\obj\Debug\MainWindow.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\obj\Debug\TabControl.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\obj\Debug\TabControl2.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\obj\Debug\App.baml
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\obj\Debug\App.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\obj\Debug\WMS.g.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.1.17\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.2.24\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\WMS.pdb
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\bin\Debug\WMS.exe.config
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\WMS.exe
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\WMS.pdb
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\bin\Debug\WMS.exe
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\bin\Debug\WMS.pdb
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\WMSServer.csprojResolveAssemblyReference.cache
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\MainWindow.baml
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\TabControl.baml
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\TabControl2.baml
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\App.baml
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\App.g.cs
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\WMS.g.resources
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\LJD\Desktop\丹东调试\WMS 2019.2.24\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\bin\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\bin\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\obj\Debug\WMSServer.csprojResolveAssemblyReference.cache
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\obj\Debug\MainWindow.baml
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\obj\Debug\TabControl.baml
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\obj\Debug\TabControl2.baml
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\obj\Debug\App.baml
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\obj\Debug\App.g.cs
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\obj\Debug\WMS.g.resources
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\jjp-god\Desktop\WMS 2019.2.24\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\bin\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\bin\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\obj\Debug\WMSServer.csprojResolveAssemblyReference.cache
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\obj\Debug\MainWindow.baml
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\obj\Debug\TabControl.baml
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\obj\Debug\TabControl2.baml
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\obj\Debug\App.baml
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\obj\Debug\App.g.cs
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\obj\Debug\WMS.g.resources
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\jjp-god\Desktop\WMS 2019.2.28\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\bin\Debug\WMS.exe.config
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\obj\Debug\WMS.exe
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\obj\Debug\WMS.pdb
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\bin\Debug\WMS.exe
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\bin\Debug\WMS.pdb
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\obj\Debug\WMSServer.csprojResolveAssemblyReference.cache
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\obj\Debug\MainWindow.baml
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\obj\Debug\TabControl.baml
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\obj\Debug\TabControl2.baml
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\obj\Debug\App.baml
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\obj\Debug\App.g.cs
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\obj\Debug\WMS.g.resources
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\LJD\Desktop\WMS 2019.3.15\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\bin\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\bin\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\obj\Debug\WMSServer.csprojResolveAssemblyReference.cache
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\obj\Debug\MainWindow.baml
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\obj\Debug\TabControl.baml
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\obj\Debug\TabControl2.baml
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\obj\Debug\App.baml
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\obj\Debug\App.g.cs
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\obj\Debug\WMS.g.resources
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\jjp-god\Desktop\丹东调试\test\WMS 2019.3.15\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\bin\Debug\WMS.exe.config
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\WMS.exe
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\WMS.pdb
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\bin\Debug\WMS.exe
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\bin\Debug\WMS.pdb
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\WMSServer.csprojResolveAssemblyReference.cache
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\MainWindow.baml
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\TabControl.baml
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\TabControl2.baml
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\App.baml
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\App.g.cs
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\WMS.g.resources
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\LJD\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
+C:\Users\jjp-god\Desktop\WMS 2019.3.15(2)\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\WMS 2019.3.15(2)\WMS\obj\Debug\WMS.pdb
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\bin\Debug\WMS.exe.config
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\obj\Debug\WMS.exe
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\obj\Debug\WMS.pdb
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\bin\Debug\WMS.exe
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\bin\Debug\WMS.pdb
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\obj\Debug\WMSServer.csprojResolveAssemblyReference.cache
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\obj\Debug\MainWindow.baml
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\obj\Debug\TabControl.baml
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\obj\Debug\TabControl2.baml
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\obj\Debug\App.baml
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\obj\Debug\App.g.cs
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\obj\Debug\WMS.g.resources
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\LJD\Desktop\WMS 2019.3.19\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
+E:\软件\WMS 2019.3.19\WMS\bin\Debug\WMS.exe.config
+E:\软件\WMS 2019.3.19\WMS\obj\Debug\WMS.exe
+E:\软件\WMS 2019.3.19\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.3.19\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.3.19\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\丹东调试\WMS 2019.3.19\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\bin\Debug\WMS.exe.config
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\obj\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\obj\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\bin\Debug\WMS.exe
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\bin\Debug\WMS.pdb
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\obj\Debug\MainWindow.baml
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\obj\Debug\TabControl.baml
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\obj\Debug\TabControl2.baml
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\obj\Debug\App.baml
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\obj\Debug\MainWindow.g.cs
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\obj\Debug\App.g.cs
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\obj\Debug\WMS_MarkupCompile.cache
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\obj\Debug\WMS.g.resources
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\jjp-god\Desktop\近期文件夹\丹东调试\WMS 2019.3.19\WMS\obj\Debug\WMSServer.csproj.GenerateResource.Cache
